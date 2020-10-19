@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/ufarmstylesheet.css">
+    <link rel="stylesheet" href="../css/ufarmstylesheet.css">
     <title>Dashboard</title>
 </head>
 
 <body>
     <!-- Top navigation -->
-
     <nav class="navbar  navbar-light bg-white">
         <span class="navbar-brand mb-0 h1 text-success"><strong>UFarm</strong></span>
 
@@ -42,49 +41,70 @@
                 </div>
         </ul>
     </nav>
-    <!-- side navigation -->
-    <div class="sidenav" id="mysidenav">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars text-success "></i>
-        </a>
-        <a href="#about">Home</a>
-        <div class="dropdown-divider "></div>
-        <button class="dropdown-btn">Farmer Ones
-   <i class="fa fa-caret-down"></i>
- </button>
-        <div class="dropdown-container">
-            <a href="#">View Farmer Ones</a>
-            <a href="#">Manage</a>
+    <div class="row">
+        <div class="col-md-4">
+            <!-- Side Navigation  -->
+            <div class="sidenav" id="mysidenav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars text-success "></i>
+                </a>
+                <a href="#about">Overview</a>
+                <div class="dropdown-divider "></div>
+                <button class="dropdown-btn">Farmer Ones
+           <i class="fa fa-caret-down"></i>
+         </button>
+                <div class="dropdown-container">
+                    <a class="nav-link" href="#overview">View Farmer Ones</a>
+                    <a href="#">Manage</a>
+                </div>
+                <div class="dropdown-divider "></div>
+                <button class="dropdown-btn">My Shop
+            <i class="fa fa-caret-down"></i>
+          </button>
+                <div class="dropdown-container">
+                    <a href="#">My Products</a>
+                     <a href="#">Add new Product</a>
+                </div>
+                <div class="dropdown-divider "></div>
+                <button class="dropdown-btn">Orders
+         <i class="fa fa-caret-down"></i>
+         </button>
+                <div class="dropdown-container">
+                    <a href="#">Pending Orders</a>
+                    <a href="#">History</a>
+                </div>
+                <div class="dropdown-divider "></div>
+                <button class="dropdown-btn">Communication
+         <i class="fa fa-caret-down"></i>
+         </button>
+                <div class="dropdown-container">
+                    <a href="#">Compose</a>
+                    <a href="#">Inbox</a>
+                </div>
+                <div class="dropdown-divider "></div>
+                <button class="dropdown-btn">Resources
+         <i class="fa fa-caret-down"></i>
+         </button>
+                <div class="dropdown-container">
+                    <a href="#">Analytics</a>
+                    <a href="#">Reports</a>
+                </div>
+            </div>
+            <!-- End Side Navigation  -->
         </div>
-        <div class="dropdown-divider "></div>
-        <button class="dropdown-btn">My Shop
-    <i class="fa fa-caret-down"></i>
-  </button>
-        <div class="dropdown-container">
-            <a href="#">My Products</a>
-             <a href="#">Add new Product</a>
-        </div>
-        <div class="dropdown-divider "></div>
-        <button class="dropdown-btn">Orders
- <i class="fa fa-caret-down"></i>
- </button>
-        <div class="dropdown-container">
-            <a href="#">Pending Orders</a>
-            <a href="#">History</a>
+        <div class="col-md-8">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item text-success"><a href="#">Farmer Ones</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">View</li>
+                </ol>
+              </nav>
         </div>
     </div>
-    <!-- content -->
-    <!-- Footer -->
-    <!-- Footer -->
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="js/ufarmstylesheet.js">
+    <script src="../js/ufarmstylesheet.js">
     </script>
 </body>
 
