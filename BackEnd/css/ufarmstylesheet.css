@@ -4,6 +4,7 @@
         
         body {
             font-family: "Lato", sans-serif;
+           
         }
         /* Fixed sidenav, full height */
         
@@ -41,15 +42,7 @@
         .dropdown-btn:hover {
             color: #f1f1f1;
         }
-        /* Main content */
-        
-        .main {
-            margin-left: 200px;
-            /* Same as the width of the sidenav */
-            font-size: 20px;
-            /* Increased text to enable scrolling */
-            padding: 0px 10px;
-        }
+       
         /* Add an active class to the active dropdown button */
         
         .active {
@@ -113,3 +106,27 @@
                 text-align: left;
             }
         }
+      
+     table{
+         width:100%;
+         margin-right:20px;
+
+     }
+     tbody{
+       
+         overflow-y: visible;
+
+         /* height:50%; */
+
+     }
+     tbody,thead,th,td{
+        padding-left:10px;
+        padding-top: 10px;
+        width:20%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* .contentdiv{
+        position:fixed;
+    } */
+   
+   

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="../css/ufarmstylesheet.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <title>View Urban Farmers</title>
+</head>
+
+<body>
+    <!-- Top navigation -->
+    <nav class="navbar  navbar-light bg-white border-bottom fixed-top">
+        <span class="navbar-brand mb-0 h1 text-success"><strong>UFarm</strong></span>
+        <button class="navbar-toggler float-right d-sm-block d-md-none" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+            aria-label="Toggle navigation" id="navbartoggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="nav justify-content-end ml-auto">
+            <li class="nav-item">
+                <a class="nav-link fa fa-bell mt-1 text-success" href="#">
+                    <sup class="text-danger"><strong>1</strong></sup>
+                </a>
+            </li class="nav-item ">
+            <h6 class="mt-2">Mariat Ndagire</h6>
+            <li>
+
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fa fa-user text-success mt-1 mr-5" data-toggle="dropdown" href="#"
+                    role="button" aria-haspopup="true" aria-expanded="false" id="navbardropdown"></a>
+                <div class="dropdown-menu bg-success mr-auto ">
+                    <a class="dropdown-item text-white topnavitems" href="#">Edit Profile</a>
+                    <div class="dropdown-divider "></div>
+                    <a class="dropdown-item text-white topnavitems" href="#">Reset Password</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-white topnavitems" href="#">Log Out</a>
+
+                </div>
+        </ul>
+    </nav>
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-xs-6 ">
+            <!-- Side Navigation  -->
+            <div class="sidenav" id="mysidenav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars text-success "></i>
+                </a>
+                <a href="dashboard.html">Overview</a>
+                <div class="dropdown-divider "></div>
+                <button class="dropdown-btn">Farmer Ones
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a class="nav-link" href="Farmeronetable.html"> Farmer Ones</a>
+                    <a class="nav-link" href="UFtable.html">View Urban Farmers</a>
+                </div>
+                <div class="dropdown-divider "></div>
+                <button class="dropdown-btn">My Shop
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">My Products</a>
+                    <a href="AddProduce.html">Add new Product</a>
+                </div>
+                <div class="dropdown-divider "></div>
+                <button class="dropdown-btn">Orders
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Pending Orders</a>
+                    <a href="#">History</a>
+                </div>
+                <div class="dropdown-divider "></div>
+                <button class="dropdown-btn">Communication
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Compose</a>
+                    <a href="#">Inbox</a>
+                </div>
+                <div class="dropdown-divider "></div>
+                <button class="dropdown-btn">Resources
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="#">Analytics</a>
+                    <a href="#">Reports</a>
+                </div>
+            </div>
+            <!-- End Side Navigation  -->
+        </div>
+        <div  class="col pt-lg-3 contentdiv   p-md-3 mt-md-5 mt-lg-5 " id="overview">
+           
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mt-lg-5 mt-md-5">
+                      <li class="breadcrumb-item text-success"><a href="Farmeronetable.html">Urban Farmers</a></li>
+                      <li class="breadcrumb-item" aria-current="page">View</li>
+                    </ol>
+                  </nav>
+                  <table class=" table-striped table-responsive table-bordered table-hover " id="myTable">
+                    <thead class="thead-inverse bg-success text-white">
+                        <tr>
+                            <th> Name</th>
+                            <th> Unique ID</th>
+                            <th> Gender</th>
+                            <th>Phone Number</th>
+                            <th>NIN</th>
+                            <th>D.O.B</th>
+                            <th>D.O.R</th>
+                            <th>FO Incharge</th>
+                            <th> Ward Name</th>
+                            <th> Activity</th>
+                            <th>Password</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ndagire Mariat</td>
+                            <td>FO/001</td>
+                            <td>Female</td>
+                            <td>0705976941</td>
+                            <td>CF98037YZL</td>
+                            <td>28/04/1998</td>
+                            <td>12/11/2020</td>
+                            <td>Nsamba Haawa</td>
+                            <td>Rwizi</td>
+                            <td>Horticulture</td>
+                            <td>uf456Ytl</td>
+                        </tr>
+                        <tr>
+                            <td>Ndagire Mariat</td>
+                            <td>FO/001</td>
+                            <td>Female</td>
+                            <td>0705976941</td>
+                            <td>CF98037YZL</td>
+                            <td>28/04/1998</td>
+                            <td>12/11/2020</td>
+                            <td>Nyamitanga</td>
+                            <td>Rwizi</td>
+                            <td>Poultry</td>
+                            <td>uf456Ytl</td>
+    
+                        </tr>
+                        <tr>
+                            <td>Ndagire Mariat</td>
+                            <td>FO/001</td>
+                            <td>Female</td>
+                            <td>0705976941</td>
+                            <td>CF98037YZL</td>
+                            <td>28/04/1998</td>
+                            <td>12/11/2020</td>
+                            <td>Otim Benjamin</td>
+                            <td>Rwizi</td>
+                            <td>Dairy</td>
+                            <td>uf456Ytl</td>
+    
+                        </tr>
+                        <tr>
+                            <td>Ndagire Mariat</td>
+                            <td>FO/001</td>
+                            <td>Female</td>
+                            <td>0705976941</td>
+                            <td>CF98037YZL</td>
+                            <td>28/04/1998</td>
+                            <td>12/11/2020</td>
+                            <td>Otim Benjamin</td>
+                            <td>Rwizi</td>
+                            <td>Poultry</td>
+                            <td>uf456Ytl</td>
+    
+                        </tr>
+                        <tr>
+                            <td>Ndagire Mariat</td>
+                            <td>FO/001</td>
+                            <td>Female</td>
+                            <td>0705976941</td>
+                            <td>CF98037YZL</td>
+                            <td>28/04/1998</td>
+                            <td>12/11/2020</td>
+                            <td>Otim Benjamin</td>
+                            <td>Rwizi</td>
+                            <td>Horticulture</td>
+                            <td>uf456Ytl</td>
+    
+    
+                        </tr>
+                        <tr>
+                            <td>Ndagire Mariat</td>
+                            <td>FO/001</td>
+                            <td>Female</td>
+                            <td>0705976941</td>
+                            <td>CF98037YZL</td>
+                            <td>28/04/1998</td>
+                            <td>12/11/2020</td>
+                            <td>Jacob Nuwamanya</td>
+                            <td>Rwizi</td>
+                            <td>Dairy</td>
+                            <td>uf456Ytl</td>
+    
+                        </tr>
+                        <tr>
+                            <td>Ndagire Mariat</td>
+                            <td>FO/001</td>
+                            <td>Female</td>
+                            <td>0705976941</td>
+                            <td>CF98037YZL</td>
+                            <td>28/04/1998</td>
+                            <td>12/11/2020</td>
+                            <td>Monica Inyabo</td>
+                            <td>Rwizi</td>
+                            <td>Poultry</td>
+                            <td>uf456Ytl</td>
+                        </tr>
+                        <tr>
+                            <td>Ndagire Mariat</td>
+                            <td>FO/001</td>
+                            <td>Female</td>
+                            <td>0705976941</td>
+                            <td>CF98037YZL</td>
+                            <td>28/04/1998</td>
+                            <td>12/11/2020</td>
+                            <td>Conrad Waako</td>
+                            <td>Rwizi</td>
+                            <td>Dairy</td>
+                            <td>uf456Ytl</td>
+    
+                        </tr>
+                        <tr>
+                            <td>Ndagire Mariat</td>
+                            <td>FO/001</td>
+                            <td>Female</td>
+                            <td>0705976941</td>
+                            <td>CF98037YZL</td>
+                            <td>28/04/1998</td>
+                            <td>12/11/2020</td>
+                            <td>Nansamba Ashura</td>
+                            <td>Rwizi</td>
+                            <td>Horticulture</td>
+                            <td>uf456Ytl</td>
+    
+                        </tr>
+                    </tbody>
+                </table>
+               
+
+        
+  </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="../js/ufarmstylesheet.js">
+
+    </script>
+        <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+   
+</body>
+
+
+
+
+</html>

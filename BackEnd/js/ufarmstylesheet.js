@@ -22,3 +22,25 @@ function myFunction() {
         x.className = "sidenav";
     }
 }
+var isNavOpen=false;
+var sideNav=document.getElementById('mysidenav');
+var navToggle=document.getElementById('navbartoggle');
+
+navToggle.addEventListener('click',function(){
+    if(isNavOpen){
+        sideNav.style.display="none";
+        isNavOpen=false;
+    }else{
+        sideNav.style.display="block";
+        isNavOpen=true;
+    }
+});
+// var $  = require( 'jquery' );
+// var dt = require( 'datatables.net' )();
+// $(document).ready(function() {
+//     $('#example').DataTable( {
+//         "scrollY":        "200px",
+//         "scrollCollapse": true,
+//         "paging":         false
+//     } );
+// } );

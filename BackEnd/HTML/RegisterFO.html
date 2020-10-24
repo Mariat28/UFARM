@@ -17,24 +17,26 @@
  
     <div class="container col-md-6 ">
         <div class="card border-success p-3 mt-5">
-        <form>
+        <form name="addFo" id="addFo">
             <div class="form-row">
                 <div class="form-group col-md-4">
                     <label for="firstname">First Name</label>
-                    <input type="text" class="form-control" id="firstname" placeholder="First name">
+                    <input type="text" class="form-control" id="firstname"name="fname" placeholder="First name">
                   </div>
+                  <span id="fnameerr"></span>
                   <div class="form-group col-md-4">
                     <label for="last name">Last Name</label>
-                    <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                    <input type="text" class="form-control" id="lastname" name="lname placeholder="Last name">
                   </div>
+                  <span id="lnameerr"></span>
                   <div class="form-group col-md-4">
                     <label for="userid">Unique ID</label>
-                    <input type="text" class="form-control" id="userid" placeholder="FO/001">
+                    <input type="text" class="form-control" id="userid"name="userid" placeholder="FO/001">
                   </div>
-                
+                  <span id="iderr"></span>
               <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <label for="inputEmail4">Email(optional)</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" >
               </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">Password</label>
@@ -117,11 +119,11 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-success ">Add Farmer One</button>
+            <button type="submit" class="btn btn-success"onclick="validateform()">Add Farmer One</button>
           </form>
           </div>   
       </div>
- </div>
  
+ <script src="../js/validation.js"></script>
 </body>
 </html>

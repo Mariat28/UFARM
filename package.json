@@ -1,0 +1,25 @@
+{
+  "name": "ufarm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon database.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mariat28/UFARM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mariat28/UFARM/issues"
+  },
+  "homepage": "https://github.com/Mariat28/UFARM#readme",
+  "dependencies": {
+    "datatables.net": "^1.10.22",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
